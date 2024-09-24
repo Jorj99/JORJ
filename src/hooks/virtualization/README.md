@@ -43,4 +43,4 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 Virtualization hook in vercel -> [Vercel](https://jorj-m3paz2tpu-jorj99s-projects.vercel.app/virtualization)
 
-Virtualization hook code -> [README.md](https://github.com/Jorj99/JORJ/tree/main/src/hooks/virtualization)
+2 README.md
