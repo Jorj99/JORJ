@@ -1,0 +1,33 @@
+{
+    "extends": [
+        "next",
+        "prettier",
+        "next/core-web-vitals",
+        "next/typescript",
+        "eslint:recommended",
+        "plugin:react/recommended",
+        "plugin:prettier/recommended"
+    ],
+    "plugins": ["prettier"],
+    "rules": {
+        // "prettier/prettier": ["error", { "printWidth": 100 }],
+        "prettier/prettier": [
+            "error",
+            {
+                "printWidth": 100,
+                "singleQuote": true,
+                "trailingComma": "es5",
+                "tabWidth": 4,
+                "useTabs": false
+            }
+        ],
+        "no-unused-vars": ["warn", { "argsIgnorePattern": "^_", "varsIgnorePattern": "^_" }],
+        "max-len": ["off"],
+        "react/react-in-jsx-scope": "off"
+    },
+    "settings": {
+        "react": {
+            "version": "detect"
+        }
+    }
+}
