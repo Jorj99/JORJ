@@ -1,21 +1,17 @@
-## Getting Started
+## CUSTOM VIRTUALIZATION HOOK
 
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+```tsx
+const { totalHeight, virtualRows, measureElement } = useVirtualization({
+    estimateRowHeight: useCallback(() => 120, []),
+    rowsCount: listItems.length,
+    getScrollElement: useCallback(() => scrollElementRef.current, []),
+    getRowKey: useCallback((index) => listItems[index]!.id, [listItems]),
+});
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Links
 
 Custom virtualization hook in vercel -> [Vercel](https://jorj-m3paz2tpu-jorj99s-projects.vercel.app/virtualization)
-
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 
@@ -24,4 +20,3 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 Virtualization hook in vercel -> [Vercel](https://jorj-m3paz2tpu-jorj99s-projects.vercel.app/virtualization)
 
 Virtualization hook code -> [README.md](https://github.com/Jorj99/JORJ/tree/main/src/hooks/virtualization)
-
